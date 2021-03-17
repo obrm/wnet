@@ -5,6 +5,7 @@
   --dark-color: #000066;
   --red-color: #ed1c24;
   --white-color: #f4f4f4;
+  --black-color: #000000;
   --max-width: 1100px;
 }
 
@@ -55,6 +56,7 @@ h6 {
   font-family: 'Secular One', sans-serif;
   margin-bottom: 0.55rem;
   line-height: 1.3;
+  font-weight: normal;
 }
 
 /* Utility */
@@ -115,9 +117,14 @@ h6 {
 .btn-secondary {
   background: var(--secondary-color);
 }
+
 .btn-light {
   background: var(--light-color);
   color: #333;
+}
+
+.btn-black {
+  background: var(--black-color);
 }
 
 .btn:hover {
@@ -130,14 +137,19 @@ h6 {
   text-align: center;
 }
 
+.l-heading {
+  font-size: 3rem;
+}
+
 .card {
   background: #fff;
   padding: 1rem;
   border-radius: 3px;
 }
 
-.card > img {
+.card img {
   margin-bottom: 0.5rem;
+  border-radius: 3px;
 }
 
 .bg-primary {
@@ -244,6 +256,20 @@ h6 {
   color: var(--primary-color) !important;
 }
 
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.meta .category {
+  margin-top: 0.4rem;
+}
+
 /* Inner pages grid container */
 .page-container {
   display: grid;
@@ -342,6 +368,10 @@ h6 {
 
 #showcase .showcase-content p {
   margin-bottom: 1rem;
+}
+
+#showcase .showcase-content a {
+  color: var(--white-color);
 }
 
 /* Hoe Articles */
